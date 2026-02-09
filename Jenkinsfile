@@ -1,8 +1,15 @@
 pipeline {
 
 agent any 
+
 options{
 skipDefaultCheckout()
+}
+
+parameters{
+
+string( name : 'MESSAGE' , defaultValue: 'Hello from Pipeline' , description: 'message to print' )
+
 }
 stages{
 
