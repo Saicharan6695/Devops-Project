@@ -8,9 +8,10 @@ skipDefaultCheckout()
 
 parameters{
 
-string( name : 'MESSAGE' , defaultValue: 'Hello from Pipeline' , description: 'message to print' )
+string(name: 'MESSAGE' , defaultValue: 'Hello from Pipeline' , description: 'message to print' )
 
 }
+
 stages{
 
 stage('checkout') {
