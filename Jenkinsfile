@@ -4,12 +4,25 @@ agent any
 
 stages{
 
-stage('SCM TEST') {
+stage('checkout') {
 
 steps{
 
-echo 'Pipeline running from Jenkinsfile' 
+checkout scm
 
+stage('Test'){
+
+steps{
+
+echo 'Test phase is running' 
+
+stage('Build'){
+
+echo 'Build phase is running'
+
+}
+}
+}
 }
 }
 }
