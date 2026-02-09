@@ -6,6 +6,14 @@ options{
 skipDefaultCheckout()
 }
 
+environment{
+
+APP_NAME = "MyDemoApp"
+ENV_TYPE = 'QA'
+
+}
+
+
 parameters{
 
 string(name: 'MESSAGE' , defaultValue: 'Hello from Pipeline' , description: 'message to print' )
